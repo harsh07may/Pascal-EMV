@@ -62,7 +62,7 @@ body {
     font-size: 18px;
 }
 
-img {
+.fin-img {
     /* object-fit: contain; */
     max-width:23%;
     height:auto;
@@ -70,7 +70,8 @@ img {
 
 }
 .logo_img{
-width: 100px;
+width: 80px;
+height: 30px
 }
 
 .cont {
