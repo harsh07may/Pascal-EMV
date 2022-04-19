@@ -92,7 +92,7 @@ footer{
   right: 0;
   background: #111;
   height: auto;
-  width: 100vw;
+  width: 100%;
 
   padding-top: 40px;
   color: #fff;
@@ -119,7 +119,7 @@ footer{
 }
 .footer-bottom{
   background: #000;
-  width: 100vw;
+  width: 95%;
   padding: 20px;
 padding-bottom: 40px;
   text-align: center;
