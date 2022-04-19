@@ -73,10 +73,10 @@ body {
 }
 
 .fin-img {
-    /* object-fit: contain; */
-    width:4000px;
-    height: 10px;
-    /* border-radius: 8px; */
+  /* object-fit: contain; */
+  width:300px;
+  height: 100px;
+  /* border-radius: 8px; */
 
 }
 .logo_img{
@@ -84,19 +84,23 @@ width: 80px;
 height: 30px
 }
 
+
+
 .cont {
   color: rgb(29, 158, 239);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: 3px solid rgb(29, 158, 239);
-  
+  border-radius: 18px;
   padding: 50px;
 }
+
 input {
   width: 300px;
   height: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 .btn{
   color: white;
   background-color: rgb(29, 158, 239);
