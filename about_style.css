@@ -1,18 +1,11 @@
 body {
     background-color: white;
-    width: 85%;
-    margin: auto;
-    border: 3px solid rgb(20, 20, 20);
-    padding: 15px;
-    border-radius: 8px;
   }
   .topnav {
     background-color: white;
     overflow: hidden;
     padding: 20px;
     margin: 0;
-    
-    width: 95%;
     border-bottom: solid 1px #3a3a3a;
   }
   
