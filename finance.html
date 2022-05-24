@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="finance.css">
     <title>Finances</title>
+    <style>
+        #reciept{
+        padding: 50px;
+        width: 85%;
+        margin: auto;
+        }
+    </style>
+    <script>
+        function purchase(){
+            var rec=document.getElementById("reciept");
+            rec.innerHTML=document.getElementById("name").value;
+        }
+        
+    </script>
 </head>
 
 <body>
@@ -24,10 +38,10 @@
 <br>
 <br>
 <div class="cont">
-    <form action="">
+    <form id="my-form" action="">
         <h2>Purchase</h2>
         <label for="">Full Name</label><br>
-        <input type="text"><br>
+        <input type="text" id="name"><br>
         <label for="">Contact No.</label><br>
         <input type="tel"><br>
         <label for="">Email</label><br>
@@ -44,9 +58,10 @@
         </select>
         
         <br><br>
-        <button type="submit" class="btn">Purchase</button>
+        <button type="button" onclick="purchase()" class="btn">Purchase</button>
     </form>
 </div>
+<div id="reciept">--------R E C I E P T--------</div>
 <h2> Low interest EMI plans</h2>
 <p> Loan Partners </p>
 <img class="fin-img" src=".\pics\finance_logo_oto.png" alt="">
