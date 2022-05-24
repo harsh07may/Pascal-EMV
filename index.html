@@ -47,9 +47,13 @@
 }     
 </style>
 <script>
-  function myfunction(){
+  function showList(){
     var click = document.getElementById("list-items");  
     click.style.display ="block";  
+  }
+  function hideList(){
+    var click = document.getElementById("list-items");  
+    click.style.display ="none";  
   }
 </script>
 <body>
@@ -59,7 +63,7 @@
             <img src="logo.svg" alt="Ampere Logo" height="32px" width="80px"/>
         </a>
         
-        <button onclick="myfunction()" class="btn">Products</button>
+        <button onmouseover="showList()" onmouseout="hideList()" class="btn">Products</button>
               <!-- dropdown list items will show when we click the drop button -->   
               
               <div id="list-items">  
