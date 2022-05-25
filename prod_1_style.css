@@ -4,34 +4,35 @@
   }
   .topnav {
     background-color: white;
-    overflow: hidden;
     padding: 20px;
     margin: 0;
     position: fixed;
     width: 100%;
     border-bottom: solid 1px #3a3a3a;
   }
-  .topnav a {
-  float: left;
-  color: #242222;
-  text-align: center;
-  padding: 14px 40px;
-  text-decoration: none;
-  font-size: 17px;
   
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #242222;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 19px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
 .card {
   font-family: "Helvetica";
   /* Add shadows to create the "card" effect */
@@ -91,6 +92,10 @@
 /* On mouse-over, add a deeper shadow */
 .card2:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.light-font{
+  color: grey;
 }
 
 table {

@@ -7,18 +7,80 @@
     <link rel="stylesheet" href="prod_1_style.css">
     <title>Pascal</title>
 </head>
+<style>
+  .btn {
+      float: left;
+      color: #242222;
+      text-align: center;
+      padding: 14px 40px;
+      text-decoration: none;
+      font-size: 19px;
+      background-color: white;
+      border: none;
+  }
+  .btn:hover {
+      background-color: #ddd;
+      color: black;
+  }
 
-<body>
+  #list-items {
+      display: none;
+      position: absolute;
+      top: 68px;
+      left: 180px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #list-items p {
+      display: block;
+      width: 115px;
+      font-size: 18px;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      padding: 20px;
+      margin: 0;
+  }
+  #list-items p:hover {
+      background-color: #ddd;
+      color: black;
+  }
+</style>
+<script>
+  function showList() {
+      var click = document.getElementById("list-items");
+      click.style.display = "block";
+  }
+  function hideList() {
+      var click = document.getElementById("list-items");
+      click.style.display = "none";
+  }
+</script>
+<body onclick="hideList()">
   <nav>
-    <div class="topnav">
-        <a class="navbar-brand" href="/">
-            <img src="logo.svg" alt="Ampere Logo" height="32px" width="80px"/>
-        </a>
-        <a href="index.html">Home</a>
-        <a href="finance.html">Purchase</a>
-        <a href="about_us.html">About</a>
+      <div class="topnav">
+          <a class="navbar-brand p-0 logo_nav" href="/" onmouseover="hideList()">
+              <img
+                  src="logo.svg"
+                  alt="Ampere Logo"
+                  height="32px"
+                  width="80px"
+              />
+          </a>
+
+          <button onmouseover="showList()" class="btn">Products</button>
+          <!-- dropdown list items will show when we click the drop button -->
+
+          <div id="list-items">
+              <p onclick="location.href = 'prod_1.html';">Magnus EX</p>
+              <p onclick="location.href = 'prod_2.html';">Magnus</p>
+              <p onclick="location.href = 'prod_3.html';">Zeal EX</p>
+              <p onclick="location.href = 'prod_4.html';">Reo Plus</p>
+          </div>
+
+          <a href="finance.html" onmouseover="hideList()">Purchase</a>
+          <a href="about_us.html" onmouseover="hideList()">About</a>
       </div>
-    </nav>
+  </nav>
     <br><br><br><br><br><br><br>
 <div class="card">
     <div class="container">
@@ -49,23 +111,23 @@
     <p class="header-text"> Technical Specifications </p>
     <table>
       <tr>
-      <td>Max speed</td>
+      <td class="light-font" >Max speed</td>
       <td>50±3 kmph</td>
       </tr>
       <tr>
-      <td>Max loading capacity</td>
+      <td class="light-font" >Max loading capacity</td>
       <td>150 kg</td>
       </tr>
       <tr>
-      <td>Charge time</td>
+      <td class="light-font" >Charge time</td>
       <td>6 to 7 Hrs</td>
       </tr>
       <tr>
-      <td>Range</td>
+      <td class="light-font" >Range</td>
       <td>121 kms - as per standard testing conditions at ARAI (Indian driving Cycle)</td>
       </tr>
       <tr>
-        <td>Price</td>
+        <td class="light-font" >Price</td>
         <td>70,000/-</td>
         </tr>
     </table>
