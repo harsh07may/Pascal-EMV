@@ -15,11 +15,13 @@
         }
     </style>
     <script>
-        function purchase(){
-            var rec=document.getElementById("reciept");
-            rec.innerHTML=document.getElementById("name").value;
+        function checkform(){
+            var name=document.getElementById("name");
+            if(name==="harsh")
+            {
+                alert(name);
+            }
         }
-        
     </script>
 </head>
 
@@ -43,9 +45,9 @@
         <label for="">Full Name</label><br>
         <input type="text" id="name"><br>
         <label for="">Contact No.</label><br>
-        <input type="tel"><br>
+        <input type="tel" id="contact"><br>
         <label for="">Email</label><br>
-        <input type="email"><br>
+        <input type="email" id="mail"><br>
         <label for="">Address</label><br>
         <input type="text"><br><br>
         <label for="cars">Choose a Vehicle:</label>
@@ -58,10 +60,9 @@
         </select>
         
         <br><br>
-        <button type="button" onclick="purchase()" class="btn">Purchase</button>
+        <button type="button" onclick="checkform()" class="btn">Purchase</button>
     </form>
 </div>
-<div id="reciept">--------R E C I E P T--------</div>
 <h2> Low interest EMI plans</h2>
 <p> Loan Partners </p>
 <img class="fin-img" src=".\pics\finance_logo_oto.png" alt="">
