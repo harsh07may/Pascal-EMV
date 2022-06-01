@@ -46,16 +46,7 @@
       color: black;
     }
   </style>
-  <script>
-    function showList() {
-      var click = document.getElementById("list-items");
-      click.style.display = "block";
-    }
-    function hideList() {
-      var click = document.getElementById("list-items");
-      click.style.display = "none";
-    }
-  </script>
+  
   <body onclick="hideList()">
     <nav>
       <div class="topnav">
@@ -160,5 +151,15 @@
         </div>
       </div>
     </footer>
+    <script>
+        function showList() {
+          var click = document.getElementById("list-items");
+          click.style.display = "block";
+        }
+        function hideList() {
+          var click = document.getElementById("list-items");
+          click.style.display = "none";
+        }
+      </script>
   </body>
 </html>
