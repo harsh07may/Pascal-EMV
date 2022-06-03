@@ -89,11 +89,12 @@ p {
 .split {
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 7vh;
 }
 
 #vertical-img {
   width: 38vw;
-  height: 68vh;
+  height: 66vh;
   padding-right: 3vw;
   margin-top: 3vh;
 }
