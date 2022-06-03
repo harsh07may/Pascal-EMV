@@ -42,6 +42,15 @@
   margin: 50px;
   display: flex;
 }
+.card-4 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 50px;
+}
+.card-4 img{
+  position: relative;
+  z-index: -1;
+}
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
