@@ -65,9 +65,8 @@ video{
   display: flex;
   flex-wrap: wrap;
   flex-grow: 5;
-  padding: 50px;
-  margin: 0 auto;
-  margin-left: 120px;
+  margin: 0 10%;
+  justify-content: center;
 }
 .container_main a{
   text-decoration: none;
