@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="finance.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#my-form").validate();
+      });
+    </script>
     <title>Finances</title>
     <style>
       #reciept {
@@ -36,16 +43,16 @@
       <form id="my-form" action="">
         <h2>Purchase</h2>
         <label for="">Full Name</label><br />
-        <input type="text" id="name" /><br />
+        <input type="text" id="name" required /><br />
         <label for="">Contact No.</label><br />
-        <input type="tel" id="contact" /><br />
+        <input type="tel" id="contact" required /><br />
         <label for="">Email</label><br />
-        <input type="email" id="mail" /><br />
+        <input type="email" id="mail" required /><br />
         <label for="">Address</label><br />
-        <input type="text" /><br /><br />
+        <input type="text" required /><br /><br />
         <label for="cars">Choose a Vehicle:</label>
 
-        <select name="bikes" class="bikes">
+        <select name="bikes" class="bikes" required>
           <option value="volvo">Magnus EX</option>
           <option value="saab">Magnus</option>
           <option value="mercedes">Zeal EX</option>
