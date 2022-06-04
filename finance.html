@@ -12,19 +12,7 @@
         width: 85%;
         margin: auto;
       }
-      #name-error,
-      #mail-error,
-      #contact-error,
-      #error {
-        display: block;
-        color: red;
-        font-size: 11px;
-        margin: 0;
-        padding: 0%;
-      }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
   </head>
 
   <body>
@@ -44,18 +32,17 @@
     </h1>
     <br />
     <br />
-
-    <form id="my-form" action="">
-      <div class="cont">
-        <div class="formhead">Purchase</div>
+    <div class="cont">
+      <form id="my-form" action="">
+        <h2>Purchase</h2>
         <label for="">Full Name</label><br />
-        <input type="text" id="name" required /><br />
+        <input type="text" id="name" /><br />
         <label for="">Contact No.</label><br />
-        <input type="tel" id="contact" required /><br />
+        <input type="tel" id="contact" /><br />
         <label for="">Email</label><br />
-        <input type="email" id="mail" required /><br />
+        <input type="email" id="mail" /><br />
         <label for="">Address</label><br />
-        <input type="text" required /><br /><br />
+        <input type="text" /><br /><br />
         <label for="cars">Choose a Vehicle:</label>
 
         <select name="bikes" class="bikes">
@@ -66,36 +53,31 @@
         </select>
 
         <br /><br />
-        <button type="button" type="submit" onclick="checkform()" class="btn">
+        <button type="button" onclick="checkform()" class="btn">
           Purchase
         </button>
-      </div>
-    </form>
-
-    <div class="color-black">
-      <h2>Low interest EMI plans</h2>
-      <p>Loan Partners</p>
-      <img class="fin-img" src=".\pics\finance_logo_oto.png" alt="" />
-      <img class="fin-img" src=".\pics\finance_logo_greaves.png" alt="" />
-      <br />
-      <br />
-      <h2>Get up to 80% Financing</h2>
-      <p>Loan Partners</p>
-      <img class="fin-img" src=".\pics\finance_logo_hdfc.png" alt="" />
-      <img class="fin-img" src=".\pics\finance_logo_idfc.png" alt="" />
-      <br />
-      <br />
-      <h2>Zero Interest EMI</h2>
-      <p>Loan Partners</p>
-      <img class="fin-img" src=".\pics\finance_logo_bajaj_finserv.png" alt="" />
-      <img class="fin-img" src=".\pics\finance_logo_mannapuram.png" alt="" />
-      <img class="fin-img" src=".\pics\finance_logo_credit_fair.png" alt="" />
-      <img class="fin-img" src=".\pics\finance_logo_loantap.png" alt="" />
+      </form>
     </div>
-    <script>
-      $(document).ready(function () {
-        $("#my-form").validate();
-      });
-    </script>
+    <h2>Low interest EMI plans</h2>
+    <p>Loan Partners</p>
+    <img class="fin-img" src=".\pics\finance_logo_oto.png" alt="" />
+    <img class="fin-img" src=".\pics\finance_logo_greaves.png" alt="" />
+
+    <br />
+    <br />
+    <h2>Get up to 80% Financing</h2>
+    <p>Loan Partners</p>
+    <img class="fin-img" src=".\pics\finance_logo_hdfc.png" alt="" />
+    <img class="fin-img" src=".\pics\finance_logo_idfc.png" alt="" />
+    <img class="fin-img" src=".\pics\finance_logo_paytail" alt="" />
+
+    <br />
+    <br />
+    <h2>Zero Interest EMI</h2>
+    <p>Loan Partners</p>
+    <img class="fin-img" src=".\pics\finance_logo_bajaj_finserv.png" alt="" />
+    <img class="fin-img" src=".\pics\finance_logo_mannapuram.png" alt="" />
+    <img class="fin-img" src=".\pics\finance_logo_credit_fair.png" alt="" />
+    <img class="fin-img" src=".\pics\finance_logo_loantap.png" alt="" />
   </body>
 </html>
