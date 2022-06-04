@@ -1,6 +1,7 @@
 body {
   background-color: white;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .topnav {
@@ -24,26 +25,26 @@ body {
 }
 
 
-  .cont label {
-    font-family: 'Trebuchet MS', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 800;
-    padding: 0;
-    margin: 0;
-  }
-  .formhead{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    
-    font-size: 28px;
-    font-weight: 800  ;
-    padding-bottom:20px;
-    margin: 0;
-  }
-  .cont button {
-    font-family: 'Trebuchet MS', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-  }
+/* .cont label {
+  font-family: 'Trebuchet MS', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding-top: 10px;
+  margin: 0;
+}
+.formhead{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  
+  font-size: 28px;
+  font-weight: 800  ;
+  padding-bottom:20px;
+  margin: 0;
+}
+.cont button {
+  font-family: 'Trebuchet MS', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+} */
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -92,10 +93,13 @@ p {
 }
 .cont button {
   font-family: 'Trebuchet MS', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-
+.pform {
+  display: flex;
+  flex-direction: column;
+}
 
 .fin-img {
   /* object-fit: contain; */
@@ -115,18 +119,19 @@ height: 30px
 .cont {
   color: rgb(0, 0, 0);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
+  /* text-align: center; */
   background-color: rgb(255, 255, 255);
   max-width: 40vw;
+  width: 40vw;
   max-height: 100vh;
-  margin: auto;
+  /* margin: auto; */
   padding: 0 0 20px 0;
 }
 
 input {
   width: 50%;
   height: 2em;
-  margin-top: 10px;
+  margin: 1.6vh 0;
   
 }
 
@@ -161,6 +166,20 @@ select{
   color: red;
   font-size: 12px;
 }
+.container-1 {
+  box-sizing: border-box;
+  margin: 0 10vw 5vh;
+  height: 60vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.image {
+  width: 28vw;
+  height: 58vh;
+  margin-right: 10vw;
+}
+
 .container {
   box-sizing: border-box;
   margin: 0 10vw 5vh;
@@ -172,5 +191,12 @@ select{
 
 .head {
   font-size: 38px;
-  
+  border-top: #ECEEF0 4px solid;
+  padding-top: 4vh;
+}
+
+.center {
+  font-size: 38px;
+  padding-top: 10px;
+  margin-left: 10vw;
 }
