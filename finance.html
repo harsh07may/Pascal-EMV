@@ -12,15 +12,19 @@
         width: 85%;
         margin: auto;
       }
-    </style>
-    <script>
-      function checkform() {
-        var name = document.getElementById("name");
-        if (name === "harsh") {
-          alert(name);
-        }
+      #name-error,
+      #mail-error,
+      #contact-error,
+      #error {
+        display: block;
+        color: red;
+        font-size: 11px;
+        margin: 0;
+        padding: 0%;
       }
-    </script>
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
   </head>
 
   <body>
@@ -45,13 +49,13 @@
       <div class="cont">
         <div class="formhead">Purchase</div>
         <label for="">Full Name</label><br />
-        <input type="text" id="name" /><br />
+        <input type="text" id="name" required /><br />
         <label for="">Contact No.</label><br />
-        <input type="tel" id="contact" /><br />
+        <input type="tel" id="contact" required /><br />
         <label for="">Email</label><br />
-        <input type="email" id="mail" /><br />
+        <input type="email" id="mail" required /><br />
         <label for="">Address</label><br />
-        <input type="text" /><br /><br />
+        <input type="text" required /><br /><br />
         <label for="cars">Choose a Vehicle:</label>
 
         <select name="bikes" class="bikes">
@@ -62,7 +66,7 @@
         </select>
 
         <br /><br />
-        <button type="button" onclick="checkform()" class="btn">
+        <button type="button" type="submit" onclick="checkform()" class="btn">
           Purchase
         </button>
       </div>
@@ -88,5 +92,10 @@
       <img class="fin-img" src=".\pics\finance_logo_credit_fair.png" alt="" />
       <img class="fin-img" src=".\pics\finance_logo_loantap.png" alt="" />
     </div>
+    <script>
+      $(document).ready(function () {
+        $("#my-form").validate();
+      });
+    </script>
   </body>
 </html>
