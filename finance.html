@@ -11,6 +11,13 @@
       $(document).ready(function () {
         $("#my-form").validate();
       });
+      document.getElementById("#contact-error").style.display = "none";
+      $("#contact").on("change keyup paste", function () {
+        let newText = parseInt($("#t1").val());
+        if (!newText.isInteger()) {
+          $("#contact-error").css("display", "block");
+        }
+      });
     </script>
     <title>Finances</title>
     <style>
@@ -33,12 +40,10 @@
         <a href="about_us.html">About</a>
       </div>
     </nav>
-    
-    <p class="center">
-      Purchase your E-Scooter NOW!!!
-    </p>
-    <br>
-    <br>
+
+    <p class="center">Purchase your E-Scooter NOW!!!</p>
+    <br />
+    <br />
     <div class="container-1">
       <div class="cont">
         <form id="my-form" action="">
@@ -47,7 +52,10 @@
             <label for="">Full Name</label>
             <input type="text" id="name" required />
             <label for="">Contact No.</label>
-            <input type="tel" id="contact" required />
+            <input type="tel" id="contact" onload="" required />
+            <label id="contact-error" class="error" for="contact"
+              >Contact should be a 10-digit number..</label
+            >
             <label for="">Email</label>
             <input type="email" id="mail" required />
             <label for="">Address</label>
@@ -60,15 +68,18 @@
             <option value="Zeal EX">Zeal EX</option>
             <option value="REO Plus">REO Plus</option>
           </select>
-          <br><br>
+          <br /><br />
           <button type="button" onclick="checkform()" class="btn">
             Purchase
           </button>
         </form>
       </div>
-      <img class="image" src="/pics/magnus_ex_header.png" alt="A man on a bike">  
+      <img
+        class="image"
+        src="/pics/magnus_ex_header.png"
+        alt="A man on a bike"
+      />
     </div>
-    
 
     <div class="container">
       <p class="head">
@@ -94,6 +105,5 @@
       <img class="fin-img" src=".\pics\finance_logo_credit_fair.png" alt="" />
       <img class="fin-img" src=".\pics\finance_logo_loantap.png" alt="" />
     </div>
-
   </body>
 </html>
