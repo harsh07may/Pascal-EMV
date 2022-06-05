@@ -9,14 +9,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("#my-form").validate();
-      });
-      document.getElementById("#contact-error").style.display = "none";
-      $("#contact").on("change keyup paste", function () {
-        let newText = parseInt($("#t1").val());
-        if (!newText.isInteger()) {
-          $("#contact-error").css("display", "block");
-        }
+        $("#my-form").validate({
+          rules: {
+            fname: "required",
+
+            user_email: {
+              required: true,
+              email: true,
+            },
+            contact: {
+              required: true,
+              minlength: 10,
+              maxlength: 10,
+              number: true,
+            },
+            address: "required",
+          },
+          messages: {
+            fname: "This field is required",
+
+            user_email: {
+              email: "Enter a valid email",
+              fname: "This field is required",
+            },
+            contact: {
+              fname: "This field is required",
+              minlength: "Should be a 10-digit number",
+              number: "Should be a 10-digit number",
+            },
+            address: "This field is required",
+          },
+        });
       });
     </script>
     <title>Finances</title>
