@@ -73,16 +73,13 @@
           <!-- <h2>Purchase</h2> -->
           <div class="pform">
             <label for="">Full Name</label>
-            <input type="text" id="name" required />
+            <input type="text" id="name" name="fname" required />
             <label for="">Contact No.</label>
-            <input type="tel" id="contact" onload="" required />
-            <label id="contact-error" class="error" for="contact"
-              >Contact should be a 10-digit number..</label
-            >
+            <input type="tel" id="contact" name="contact" required />
             <label for="">Email</label>
-            <input type="email" id="mail" required />
+            <input type="email" id="mail" name="user_email" required />
             <label for="">Address</label>
-            <input type="text" required /><br />
+            <input type="text" name="address" required /><br />
           </div>
           <label for="cars">Choose a Vehicle:</label>
           <select name="bikes" class="bikes" required>
