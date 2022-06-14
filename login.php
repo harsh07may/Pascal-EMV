@@ -26,7 +26,7 @@
     // Checking for the errors
     if (count($errors) == 0) {
 
-      echo "\nno errors\n";
+      // echo "\nno errors\n";
         // Password matching
         // $password = md5($password);
 
@@ -45,8 +45,8 @@
 
             // Page on which the user is sent
             // to after logging in
-            echo "\nlocation";
-            header('location: index.html');
+            // echo "\nlocation";
+            header('location: index.php');
         } else {
 
             // If the username and password doesn't match
