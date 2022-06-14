@@ -24,6 +24,11 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.error{
+  display: block;
+  color: red;
+  font-size: 12px;
+}
 
 /* .cont label {
   font-family: 'Trebuchet MS', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
