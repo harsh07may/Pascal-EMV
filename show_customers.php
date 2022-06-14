@@ -103,6 +103,7 @@
 					<th>CONTACT</th>
 					<th>EMAIL</th>
 					<th>ADDRESS</th>
+					<th>PRODUCT</th>
 				</tr>
 				<tbody id="data"></tbody>
 			</table>
@@ -140,11 +141,13 @@
 							var contact = data[a].contact;
 							var user_email = data[a].user_email;
 							var address = data[a].address;
+							var bikes = data[a].bikes;
 							html += "<tr>";
 							html += "<td>" + fname + "</td>";
 							html += "<td>" + contact + "</td>";
 							html += "<td>" + user_email + "</td>";
 							html += "<td>" + address + "</td>";
+							html += "<td>" + bikes + "</td>";
 							html += "</tr>"
 						} else
 							console.log(false);
