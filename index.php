@@ -1,3 +1,33 @@
+<?php
+
+// Starting the session, to use and
+// store data in session variable
+session_start();
+
+// If the session variable is empty, this
+// means the user is yet to login
+// User will be sent to 'login.php' page
+// to allow the user to login
+if (!isset($_SESSION['username'])) {
+  $_SESSION['msg'] = "You have to log in first";
+  header('location: login.php');
+}
+
+// Logout button will destroy the session, and
+// will unset the session variables
+// User will be headed to 'login.php'
+// after logging out
+if (isset($_GET['logout'])) {
+  session_destroy();
+  unset($_SESSION['username']);
+  header("location: login.php");
+}
+$result;
+$conn = mysqli_connect('localhost', 'root', '', 'regis');
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+} ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,6 +52,15 @@
     .btn:hover {
       background-color: #ddd;
       color: black;
+    }
+    .lg-btn{
+      float: left;
+  color: #242222;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 19px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     #list-items {
@@ -64,8 +103,9 @@
           <p onclick="location.href = 'prod_4.html';">Reo Plus</p>
         </div>
 
-        <a href="finance.html" onmouseover="hideList()">Purchase</a>
+        <a href="finance.php" onmouseover="hideList()">Purchase</a>
         <a href="about_us.html" onmouseover="hideList()">About</a>
+        <a style="padding-top:5px;margin-left:40%" href="index.php?logout='1'" onmouseover="hideList()"><button class="btn" type="button" >Log out</button></a>
       </div>
     </nav>
     <br /><br /><br /><br /><br /><br />

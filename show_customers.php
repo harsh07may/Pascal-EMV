@@ -72,7 +72,7 @@
 				<img src="logo.svg" alt="Pascal Logo" class="logo_img" height="32px" width="80px"/>
        		</a>
         <a href="index.php#products">Products</a>
-			<a href="finance.html">Purchase</a>
+			<a href="finance.php">Purchase</a>
 			<a href="about_us.html">About</a>
 		</div>
 	</nav>

@@ -61,7 +61,7 @@
     </nav>
 	<center>
 		<?php
-
+    session_start();
 		// servername => localhost
 		// username => root
 		// password => empty
@@ -73,9 +73,9 @@
 			die("ERROR: Could not connect. "
 				. mysqli_connect_error());
 		}
-		
+		if(isset($_REQUEST['Submit'])){
 		// Taking all 5 values from the form data(input)
-		$fname = $_REQUEST['fname'];
+		$fname=$_SESSION['username'];
 		$contact = $_REQUEST['contact'];
 		$mail = $_REQUEST['user_email'];
 		$address = $_REQUEST['address'];
@@ -107,6 +107,7 @@
             echo "Bike:  ".$bikes;
 		// Close connection
 		mysqli_close($conn);
+          }
 		?><br><br>
         <button class="hidden-print" onclick="window.print()">Print Bill</button>
         <br><br>
