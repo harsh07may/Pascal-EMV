@@ -79,11 +79,12 @@
 		$contact = $_REQUEST['contact'];
 		$mail = $_REQUEST['user_email'];
 		$address = $_REQUEST['address'];
+		$bikes = $_REQUEST['bikes'];
 		
 		// Performing insert query execution
 		// here our table name is college
-		$sql = "INSERT INTO bookings(fname,contact,user_email,address) VALUES ('$fname',
-			'$contact','$mail','$address')";
+		$sql = "INSERT INTO bookings(fname,contact,user_email,address,bikes) VALUES ('$fname',
+			'$contact','$mail','$address','$bikes')";
 		
 		if(mysqli_query($conn, $sql))
         {
@@ -95,13 +96,15 @@
                 echo "ERROR: Hush! Sorry $sql. "
                     . mysqli_error($conn);
             }
-            echo "Name:".$fname;
+            echo "Name:  ".$fname;
             echo "<br>";
-            echo "Contact No.:".$contact;
+            echo "Contact No.:  ".$contact;
             echo "<br>";
-            echo "E-Mail:".$mail;
+            echo "E-Mail:  ".$mail;
             echo "<br>";
-            echo "Address:".$address;
+            echo "Address:  ".$address;
+            echo "<br>";
+            echo "Bike:  ".$bikes;
 		// Close connection
 		mysqli_close($conn);
 		?><br><br>
