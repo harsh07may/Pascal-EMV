@@ -7,7 +7,29 @@
     <link rel="stylesheet" href="about_style.css" />
     <title>About Us</title>
   </head>
+  <style>
+    #panel,
+    #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #e7e7e7;
+      border: solid 1px #a3a3a3;
+      font-size: 28px;
+    }
 
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#flip").click(function () {
+        $("#panel").slideToggle("slow");
+      });
+    });
+  </script>
   <body>
     <nav>
       <div class="topnav">
@@ -95,6 +117,17 @@
         <div>
           <img id="vertical-img" src=".\pics\about_us_magnusex.png" alt="" />
         </div>
+      </div>
+
+      <div id="flip">Show More</div>
+      <div id="panel">
+        <a href="https://amperevehicles.com/savings"
+          >Savings-meter compared to petrol @ ₹100/litre</a
+        ><br />
+        <a
+          href="https://www.goa.gov.in/wp-content/uploads/2021/12/Scheme-for-Promotion-of-Electric-Vehicles-in-the-State.pdf"
+          >Goa Government Subsidy Scheme on EMV</a
+        >
       </div>
     </div>
   </body>
