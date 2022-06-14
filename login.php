@@ -104,18 +104,6 @@
   </head>
 
   <body>
-    <nav>
-      <div class="topnav">
-        <a class="navbar-brand" href="/">
-          <img src="logo.svg" alt="Pascal Logo" class="logo_img"/>
-        </a>
-        <a href="index.html#products">Products</a>
-        <a href="finance.html">Purchase</a>
-        <a href="about_us.html">About</a>
-        <a href="show_customers.php">Track Order</a>
-      </div>
-    </nav>
-
     <p class="center">Sign in</p>
     <br />
     <br />

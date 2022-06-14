@@ -68,10 +68,10 @@
 	<!-- navbar -->
 	<nav>
 		<div class="topnav">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="index.php">
 				<img src="logo.svg" alt="Pascal Logo" class="logo_img" height="32px" width="80px"/>
        		</a>
-        <a href=" C:\xampp\htdocs\EMV-Site-2\index.html">Products</a>
+        <a href="index.php#products">Products</a>
 			<a href="finance.html">Purchase</a>
 			<a href="about_us.html">About</a>
 		</div>

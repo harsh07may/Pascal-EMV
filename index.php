@@ -50,8 +50,8 @@
   <body onclick="hideList()">
     <nav>
       <div class="topnav">
-        <a class="navbar-brand p-0 logo_nav" href="/" onmouseover="hideList()">
-          <img src="logo.svg" alt="Ampere Logo" height="32px" width="80px" />
+        <a class="navbar-brand p-0 logo_nav" href="index.php" onmouseover="hideList()">
+          <img src="logo.svg" alt="Pascal Logo" height="32px" width="80px" />
         </a>
 
         <button onmouseover="showList()" class="btn">Products</button>

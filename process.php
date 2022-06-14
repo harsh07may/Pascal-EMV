@@ -51,8 +51,8 @@
 <body>
 <nav>
       <div class="topnav">
-        <a class="navbar-brand" href="/">
-          <img src="logo.svg" alt="Ampere Logo" class="logo_img" "/>
+        <a class="navbar-brand" href="index.php">
+          <img src="logo.svg" alt="Pascal Logo" class="logo_img" "/>
         </a>
         <a href="C:\xampp\htdocs\EMV-Site-2\index.html">Products</a>
         <a href="finance.html">Purchase</a>
