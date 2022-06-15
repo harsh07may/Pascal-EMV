@@ -32,11 +32,13 @@
 
         $query = "SELECT * FROM users WHERE fname='$fname' AND password='$password'";
         $results = mysqli_query($db, $query);
-
+        // echo $query;
+        // echo implode(" ", [$results]);
+        
         // $results = 1 means that one user with the
         // entered username exists
-        if (mysqli_num_rows($results) == 1) {
-           echo "hello results";
+        if (mysqli_num_rows($results) >= 1) {
+          //  echo "hello results";
             // Storing username in session variable
             $_SESSION['username'] = $fname;
 
@@ -48,7 +50,7 @@
             // echo "\nlocation";
             header('location: index.php');
         } else {
-
+          echo "else";
             // If the username and password doesn't match
             array_push($errors, "Incorrect username or password");
         }
