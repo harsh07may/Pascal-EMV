@@ -54,8 +54,8 @@ session_start();
         <a class="navbar-brand" href="index.php">
           <img src="logo.svg" alt="Pascal Logo" class="logo_img" "/>
         </a>
-        <a href="index.html#products">Products</a>
-        <a href="finance.html">Purchase</a>
+        <a href="index.php#products">Products</a>
+        <a href="finance.php">Purchase</a>
         <a href="about_us.html">About</a>
         <a href="show_customers.php">Track Order</a>
       </div>

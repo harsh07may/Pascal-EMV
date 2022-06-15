@@ -105,7 +105,8 @@ if ($conn->connect_error) {
 
         <a href="finance.php" onmouseover="hideList()">Purchase</a>
         <a href="about_us.html" onmouseover="hideList()">About</a>
-        <a href="#" style="margin-left:30%;pointer-events: none;" onmouseover="hideList()"><?php echo($_SESSION['username']." ")?></a>
+        <a href="show_customers.php">Track Order</a>
+        <a href="#" style="margin-left:20%;pointer-events: none;" onmouseover="hideList()"><?php echo($_SESSION['username']." ")?></a>
         
         <a style="padding:5px;border:1px solid black" href="index.php?logout='1'" onmouseover="hideList()"><button class="btn" type="button" >Log out</button></a>
         
