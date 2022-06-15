@@ -75,6 +75,7 @@
         <a href="index.php#products">Products</a>
 			<a href="finance.php">Purchase</a>
 			<a href="about_us.html">About</a>
+			<a href="show_customers.php">Track Order</a>
 		</div>
 	</nav>
 	<center>
