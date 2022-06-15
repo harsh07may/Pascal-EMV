@@ -1,5 +1,4 @@
-<?php
-session_start();
+
 <!DOCTYPE html>
 <html>
 
@@ -80,7 +79,8 @@ session_start();
 	</nav>
 	<center>
 		<?php
-
+		session_start();
+		$inp=$_SESSION['username'];	
 		$conn = mysqli_connect("localhost", "root", "", "pascal");
 
 		// Check connection
@@ -92,7 +92,7 @@ session_start();
 		<div class="card_2">
 			<h2>Track Your Order:</h2>
 			<label for="">Name</label>
-			<input type="text" id="text-inp" disabled <?php value=$_SESSION['username'] ?> />
+			<input type="text" id="text-inp" placeholder="" value="<?php echo $inp ?>" disabled>
 			<label for="">Contact</label>
 			<input type="text" id="text-inp-2" />
 			<br>
