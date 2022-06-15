@@ -50,7 +50,7 @@
             // echo "\nlocation";
             header('location: index.php');
         } else {
-          echo "else";
+          // echo "else";
             // If the username and password doesn't match
             array_push($errors, "Incorrect username or password");
         }
@@ -102,7 +102,7 @@
         });
       });
     </script>
-    <title>Finances</title>
+    <title>Sign in</title>
   </head>
 
   <body>
@@ -117,9 +117,19 @@
             <label for="">Full Name</label>
             <input type="text" id="name" name="fname" required />
             <label for="">Password</label>
-            <input type="text" id="password" name="password" required /><br />
+            <input type="password" id="password" name="password" required /><br />
           </div>
           <button type="submit" name="Submit" class="btn">Login</button>
+          
+            <p style="display: block; color: red; font-size: 16px;">
+            <?php
+              if ($errors != ""){
+                echo implode(" ",$errors);
+              } 
+            ?>
+            </p>
+            
+          
         </form>
         <br>
         <p>Don't have an account? Click <a href="register.php"><b>here</b></a> to register.</p>
