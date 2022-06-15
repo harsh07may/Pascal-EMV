@@ -1,3 +1,5 @@
+<?php
+session_start();
 <!DOCTYPE html>
 <html>
 
@@ -90,7 +92,7 @@
 		<div class="card_2">
 			<h2>Track Your Order:</h2>
 			<label for="">Name</label>
-			<input type="text" id="text-inp" />
+			<input type="text" id="text-inp" disabled <?php value=$_SESSION['username'] ?> />
 			<label for="">Contact</label>
 			<input type="text" id="text-inp-2" />
 			<br>
